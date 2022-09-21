@@ -69,3 +69,11 @@ The mean `r mean(pull(prob_2_df, character_vector))`
 #Mean of a factor vector of length 10, with 3 different factor “levels”
 The mean `r mean(pull(prob_2_df, factor_vector))`
  
+#We can also use R to convert variables from one type to another. In this case, we will convert the logical, character, and factor vectors into numeric variables using the as.numeric function. We find that the logical vector (logical_vector) and the factor vector (factor_vector) become numeric, but the character vector (character_vector) cannot. 
+
+```{r}
+as.numeric(pull(prob_2_df,logical_vector))
+as.numeric(pull(prob_2_df,character_vector))
+as.numeric(pull(prob_2_df,factor_vector))
+```
+
