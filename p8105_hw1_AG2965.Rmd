@@ -38,3 +38,13 @@ We will save the scatterplot as a PDF file.
 ```{r}
 ggsave("p8105_hw1_AG2965.pdf", height=7, width=5)
 ```
+
+# Problem 2
+This problem is intended to emphasize variable types and introduce coercion; some awareness of how R treats numeric, character, and factor variables is necessary for working with these data types in practice.
+
+Create a data frame comprised of:
+
+1) a random sample of size 10 from a standard Normal distribution
+2) a logical vector indicating whether elements of the sample are greater than 0
+3) a character vector of length 10
+4) a factor vector of length 10, with 3 different factor “levels”
