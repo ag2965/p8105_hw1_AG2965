@@ -48,3 +48,11 @@ Create a data frame comprised of:
 2) a logical vector indicating whether elements of the sample are greater than 0
 3) a character vector of length 10
 4) a factor vector of length 10, with 3 different factor “levels”
+
+
+```{r}
+prob_2_df=tibble(randomsample=rnorm(10),
+               logical_vector = randomsample > 0,
+               character_vector = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j" ),
+               factor_vector = factor(c("small", "small", "small", "medium", "medium", "medium", "large", "large", "large", "large")))
+```
