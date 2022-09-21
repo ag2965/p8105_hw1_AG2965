@@ -77,3 +77,11 @@ as.numeric(pull(prob_2_df,character_vector))
 as.numeric(pull(prob_2_df,factor_vector))
 ```
 
+#Furthermore, we are able to take the mean of the logical vector, but not the character vector or factor vector. This may be because neither the character vector nor the factor vector consisted of numbers, so obtaining the mean is not possible.
+ 
+The mean of the logical vector is `r mean(pull(prob_2_df,logical_vector))`. This works.
+
+The mean of the character vector is `r mean(pull(prob_2_df,character_vector))`. This does not work.
+
+The mean of the factor vector is `r mean(pull(prob_2_df,factor_vector))`. This does not work.
+  )
