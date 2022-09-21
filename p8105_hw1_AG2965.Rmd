@@ -56,3 +56,16 @@ prob_2_df=tibble(randomsample=rnorm(10),
                character_vector = c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j" ),
                factor_vector = factor(c("small", "small", "small", "medium", "medium", "medium", "large", "large", "large", "large")))
 ```
+
+#Mean of random sample of size 10 from a standard normal distribution, this works
+The mean `r mean(pull(prob_2_df, randomsample))`
+
+#Mean of a logical vector indicating whether elements of the sample are greater than 0, this works
+The mean `r mean(pull(prob_2_df, logical_vector))`
+
+#Mean of a character vector of length 10, this doesn't work
+The mean `r mean(pull(prob_2_df, character_vector))`
+
+#Mean of a factor vector of length 10, with 3 different factor “levels”
+The mean `r mean(pull(prob_2_df, factor_vector))`
+ 
