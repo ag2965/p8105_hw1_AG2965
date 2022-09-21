@@ -28,3 +28,13 @@ prob_1_df=penguins
 
 The mean flipper length is `r mean(pull(prob_1_df,flipper_length_mm), na.rm = TRUE)`
 
+### Scatterplot
+
+```{r chunk_scatterplot, echo=FALSE}
+ggplot(penguins, aes(x=bill_length_mm,y=flipper_length_mm, color=species)) + geom_point()
+```
+
+We will save the scatterplot as a PDF file. 
+```{r}
+ggsave("p8105_hw1_AG2965.pdf", height=7, width=5)
+```
